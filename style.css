@@ -1,0 +1,339 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    width: 100%;
+    height: 100vh;
+}
+body{
+    font-size: 16px;
+    background: rgb(23, 20, 26);
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+header{
+    background: linear-gradient(to top, rgb(23, 20, 26) 20%, transparent), 
+        url('img/Bg-c.jpg');
+    
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 300px;
+    overflow: hidden;
+
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+
+header .Bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+header .Logo{
+    padding: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: sans-serif;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+header .Logo::before{
+    display: inline-block;
+    content: '';
+    background: rgb(92, 11, 11);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+header .NavBar {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+
+}
+header .NavBar a{
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: sans-serif;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+header .Hero{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+
+    position: relative;
+    left: 10%;
+    top: -5%;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    line-height: 1;
+    font-size: 3rem;
+}
+
+header .Hero .Subtitle{
+    margin: 5px;
+    font-size: 15px;
+}
+
+main{
+    
+    margin: 10px auto;
+}
+.Places{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 10%;
+}
+
+.Places .Title, .Reviews .Title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    margin-bottom: 10%;
+}
+
+.Places .Title .SubtitlePlaces, .Reviews .Title .SubtitleReviews{
+    font-size: .5rem;
+    font-weight: 100;
+    margin-bottom: 5px;
+}
+
+.Places .Title .TitlePlaces, .Reviews .Title .TitleReviews{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.Places .Place{
+    position: relative;
+
+    overflow: hidden;
+    
+    background: linear-gradient(to top, rgb(23, 20, 26), transparent), 
+    url('img/Wakayama.jpg');
+    background-size: cover;
+    background-position-x: -100px;
+
+    width: 70%;
+    height: 300px;
+
+    border-radius: 5px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: transparent;
+
+
+   
+
+    
+
+
+    transition: all 0.5s ease-out
+}
+.Places .Place:hover, .Places .Place:hover > .LearnMore{
+    color: #fff;
+
+    border: 1px solid #fff;
+
+    background: linear-gradient(to top, rgb(81, 20, 141), transparent), 
+    url('img/Wakayama.jpg');
+    background-size: cover;
+    background-position-x: -100px;
+    
+}
+
+.Places .Place:hover > .LearnMore{
+    background: none;
+}
+
+
+
+
+
+
+.Places .Place .PlaceName{
+    text-transform: uppercase;
+    font-style: normal;
+    font-family: sans-serif;
+    font-weight: 700;
+
+
+    font-size: 1.5rem;
+
+    margin-bottom: 30%;
+   
+}
+
+.Places .Place .LearnMore{
+    text-transform: uppercase;
+    font-style: normal;
+    font-family: sans-serif;
+    font-weight: 200;
+
+
+    font-size: .6rem;
+    padding: 10px 20px;
+    
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+
+
+.Reviews .ReviewsBody{
+    background: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.Reviews .ReviewsBody .ProfileImage{
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.Reviews .ReviewsBody .ProfileImage img{
+    vertical-align: middle;
+}
+
+.Reviews .ReviewsBody .Name{
+    margin: 20px auto;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+
+}
+
+.Reviews .ReviewsBody .ReviewText{
+    margin: 0 auto;
+    padding: 20px;
+    font-style: italic;
+    text-indent: 30px;
+    color: #383838;
+    position: relative;
+    margin: 0.25em 0;
+    padding: 0.35em 40px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.Reviews .ReviewsBody .ReviewText:before {
+    display: block;
+    padding-left: 10px;
+    content: "\201C";
+    font-size: 80px;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    color: #000000;
+}
+
+.Contact{
+    position: relative;
+    padding: 30px 0;
+    
+}
+
+.Contact::before{
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    filter: blur(5px);
+    background-size: cover;
+}
+
+.Form{
+    
+    position: relative;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 10px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
+    
+}
+.FormTitle{
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+
+.Field input{
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(71, 71, 71);
+    margin-bottom: 10px;
+}
+
+.TextArea{
+    max-width: 250px;
+    min-width: 150px;
+    min-height:200px;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+input[type="submit"]{
+    display: none;
+}
+
+.Send{
+    font-family: 'Roboto', sans-serif;
+
+    background: #000;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+
+    transition: all .4s ease;
+}
+
+.Send:hover{
+    background: #fff;
+    color: #000;
+}
