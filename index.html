@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Japan Travel</title>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
     <!-- font-family: 'Roboto', sans-serif; -->
@@ -37,11 +43,32 @@
                 <hr style="width: 120%;">
             </div>
             
-
-            <article class="Place">
-                <span class="PlaceName">Wakayama</span>
-                <span class="LearnMore">Learn More</span>
-            </article>
+            <div class="PlacesCards">
+                <article class="Place Toris">
+                    <span class="PlaceName">Fushimi Inari-taisha</span>
+                    <span class="LearnMore">Learn More</span>
+                </article>
+            
+                <article class="Place Wakayama">
+                    <span class="PlaceName">Wakayama</span>
+                    <span class="LearnMore">Learn More</span>
+                </article>
+                
+                <article class="Place Hitachi">
+                    <span class="PlaceName">Kokuei Hitachi Kaihin Kōen</span>
+                    <span class="LearnMore">Learn More</span>
+                </article>
+            
+                <article class="Place Arashiyama">
+                    <span class="PlaceName">Arashiyama</span>
+                    <span class="LearnMore">Learn More</span>
+                </article>
+            
+                <article class="Place Himeji">
+                    <span class="PlaceName">Himeji-jō</span>
+                    <span class="LearnMore">Learn More</span>
+                </article>
+            </div>
 
         </section>
 
@@ -67,38 +94,117 @@
                 <p class="ReviewText"><b>L</b>orem ipsum, dolor sit amet consectetur adipisicing   elit. Sapiente illo possimus enim ipsam ea nostrum voluptates vel magni!  Quidem, ipsa. Laborum assumenda delectus necessitatibus deleniti, quaerat.</p>  
                 <p class="ReviewText"><b>D</b>olores cupiditate debitis odit quae ut nostrum ipsa officia similique     incidunt provident ipsam? Harum, deleniti fuga? Officia ratione placeat     ipsum, voluptatem commodi voluptates nesciunt! Lorem ipsum dolor, sit amet  consectetur adipisicing elit. </p>
 
-                <div class="ReviewSelector"></div>
-                
             </div>
+
+
+            <div class="ReviewsBody">
+
+
+                <div class="ProfileImage">
+                    <img src="img/Profile2.jpg" alt="Profile Image">
+                </div>
+
+                <i class="Name">Joe Dee</i>
+
+                
+
+                <p class="ReviewText"><b>L</b>orem ipsum, dolor sit amet consectetur adipisicing   elit. Sapiente illo possimus enim ipsam ea nostrum voluptates vel magni!  Quidem, ipsa. Laborum assumenda delectus necessitatibus deleniti, quaerat.</p>  
+                <p class="ReviewText"><b>D</b>olores cupiditate debitis odit quae ut nostrum ipsa officia similique     incidunt provident ipsam? Harum, deleniti fuga? Officia ratione placeat     ipsum, voluptatem commodi voluptates nesciunt! Lorem ipsum dolor, sit amet  consectetur adipisicing elit. </p>
+
+            </div>
+
+            <div class="ReviewsBody">
+
+
+                <div class="ProfileImage">
+                    <img src="img/Profile3.jpg" alt="Profile Image">
+                </div>
+
+                <i class="Name">Joe Dee</i>
+
+                
+
+                <p class="ReviewText"><b>L</b>orem ipsum, dolor sit amet consectetur adipisicing   elit. Sapiente illo possimus enim ipsam ea nostrum voluptates vel magni!  Quidem, ipsa. Laborum assumenda delectus necessitatibus deleniti, quaerat.</p>  
+                <p class="ReviewText"><b>D</b>olores cupiditate debitis odit quae ut nostrum ipsa officia similique     incidunt provident ipsam? Harum, deleniti fuga? Officia ratione placeat     ipsum, voluptatem commodi voluptates nesciunt! Lorem ipsum dolor, sit amet  consectetur adipisicing elit. </p>
+
+            </div>
+
+
+
+
+        </section>
+        <section class="Contact">
+                <form action="#" class="Form">
+                    <h2 class="FormTitle">Contact Us!</h2>
+    
+    
+                    <div class="Field">
+                        <input type="text" id="name" name="name" placeholder="Name">
+                    </div>
+    
+                    <div class="Field">
+                        <input type="email" name="email" id="email" placeholder="E-Mail">
+                    </div>
+    
+                    <div class="Message">
+                        <textarea name="message" class="TextArea" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                    </div>
+    
+                    <label for="send" class="Send">Send</label>
+                    <input type="submit" name="send" id="send" value="Send">
+                    <hr style="width: 75%;">
+    
+                    <div class="ContactInfo">
+                        <div class="Info">
+                            <i class="fas fa-phone-square-alt"></i>
+                            +092 1234567891
+                        </div>
+                        <div class="Info">
+                            <i class="fas fa-envelope"></i>
+                            info@visitjapan.com
+                        </div>
+                        <div class="Logo">
+                            VisitJapan
+                        </div>
+                        
+    
+                    </div>
+    
+                </form>
         </section>
 
     </main>
     <footer>
-        <div class="Contact">
-            
-            <form action="#" class="Form">
-                <h2 class="FormTitle">Contact Us!</h2>
-
-
-                <div class="Field">
-                    <input type="text" id="name" name="name" placeholder="Name">
-                </div>
-
-                <div class="Field">
-                    <input type="email" name="email" id="email" placeholder="E-Mail">
-                </div>
-
-                <div class="Message">
-                    <textarea name="message" class="TextArea" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-                </div>
-
-                <label for="send" class="Send">Send</label>
-                <input type="submit" name="send" id="send" value="Send">
+        <div class="GetIn">
+            <p class="GetInTitle">Get in touch!</p>
+            <form class="SuscribeForm" action="#">
+                <input class="SuscribeInput" type="text" placeholder="example@email.com">
+                <label class="SendSuscribe" for="suscribe">Suscribe</label>
+                <input name="suscribe" id="suscribe" type="submit" value="Suscribe">
             </form>
         </div>
+
+        <div class="SocialMedias">
+            <div class="Social">
+                <i class="fab fa-instagram-square"></i> @Japan.TravelOK
+            </div>
+            <div class="Social">
+                <i class="fab fa-facebook-square"></i>Japan Travel
+            </div>
+            <div class="Social">
+                <i class="fab fa-twitter-square"></i>@JapanTravel
+            </div>
+            <div class="Social">
+                <i class="fab fa-pinterest-square"></i>Japan Travel
+            </div>
+        </div>
+        
 
     </footer>
 
 
 </body>
+<!-- <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js" integrity="sha384-3Nqiqht3ZZEO8FKj7GR1upiI385J92VwWNLj+FqHxtLYxd9l+WYpeqSOrLh0T12c" crossorigin="anonymous"></script> -->
+
+
 </html>
